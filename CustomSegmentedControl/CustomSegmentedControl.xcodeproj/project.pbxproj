@@ -13,6 +13,7 @@
 		1306F5B41D6B77C900321E35 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1306F5B21D6B77C900321E35 /* Main.storyboard */; };
 		1306F5B61D6B77C900321E35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1306F5B51D6B77C900321E35 /* Assets.xcassets */; };
 		1306F5B91D6B77C900321E35 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1306F5B71D6B77C900321E35 /* LaunchScreen.storyboard */; };
+		1306F5C31D6B791B00321E35 /* UIButton+GlobusSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 1306F5C21D6B791B00321E35 /* UIButton+GlobusSegmentedControl.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		1306F5B51D6B77C900321E35 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1306F5B81D6B77C900321E35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1306F5BA1D6B77C900321E35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1306F5C11D6B791B00321E35 /* UIButton+GlobusSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+GlobusSegmentedControl.h"; sourceTree = "<group>"; };
+		1306F5C21D6B791B00321E35 /* UIButton+GlobusSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+GlobusSegmentedControl.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,7 @@
 		1306F5A81D6B77C900321E35 /* CustomSegmentedControl */ = {
 			isa = PBXGroup;
 			children = (
+				1306F5C01D6B78EF00321E35 /* Categories */,
 				1306F5AC1D6B77C900321E35 /* AppDelegate.h */,
 				1306F5AD1D6B77C900321E35 /* AppDelegate.m */,
 				1306F5AF1D6B77C900321E35 /* ViewController.h */,
@@ -77,6 +81,15 @@
 				1306F5AA1D6B77C900321E35 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1306F5C01D6B78EF00321E35 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				1306F5C11D6B791B00321E35 /* UIButton+GlobusSegmentedControl.h */,
+				1306F5C21D6B791B00321E35 /* UIButton+GlobusSegmentedControl.m */,
+			);
+			name = Categories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,6 +164,7 @@
 			files = (
 				1306F5B11D6B77C900321E35 /* ViewController.m in Sources */,
 				1306F5AE1D6B77C900321E35 /* AppDelegate.m in Sources */,
+				1306F5C31D6B791B00321E35 /* UIButton+GlobusSegmentedControl.m in Sources */,
 				1306F5AB1D6B77C900321E35 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
