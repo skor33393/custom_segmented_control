@@ -18,6 +18,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (instancetype)initWithNormalStateTitle:(nullable NSString *)normalStateTitle
                       selectedStateTitle:(nullable NSString *)selectedStateTitle NS_DESIGNATED_INITIALIZER;
 
+- (instancetype)init NS_UNAVAILABLE;
+
 @end
 
 NS_ASSUME_NONNULL_END

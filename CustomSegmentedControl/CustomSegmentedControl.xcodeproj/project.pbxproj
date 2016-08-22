@@ -16,6 +16,7 @@
 		1306F5C31D6B791B00321E35 /* UIButton+GlobusSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 1306F5C21D6B791B00321E35 /* UIButton+GlobusSegmentedControl.m */; };
 		1306F5C71D6B7A5000321E35 /* GlobusSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 1306F5C61D6B7A5000321E35 /* GlobusSegmentedControl.m */; };
 		1306F5CA1D6B7C7F00321E35 /* GlobusSegmentedControlItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 1306F5C91D6B7C7F00321E35 /* GlobusSegmentedControlItem.m */; };
+		137A12541D6BA24F00207EBB /* UIView+Constraints.m in Sources */ = {isa = PBXBuildFile; fileRef = 137A12531D6BA24F00207EBB /* UIView+Constraints.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,8 @@
 		1306F5C61D6B7A5000321E35 /* GlobusSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlobusSegmentedControl.m; sourceTree = "<group>"; };
 		1306F5C81D6B7C7F00321E35 /* GlobusSegmentedControlItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobusSegmentedControlItem.h; sourceTree = "<group>"; };
 		1306F5C91D6B7C7F00321E35 /* GlobusSegmentedControlItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlobusSegmentedControlItem.m; sourceTree = "<group>"; };
+		137A12521D6BA24F00207EBB /* UIView+Constraints.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Constraints.h"; sourceTree = "<group>"; };
+		137A12531D6BA24F00207EBB /* UIView+Constraints.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Constraints.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +98,8 @@
 			children = (
 				1306F5C11D6B791B00321E35 /* UIButton+GlobusSegmentedControl.h */,
 				1306F5C21D6B791B00321E35 /* UIButton+GlobusSegmentedControl.m */,
+				137A12521D6BA24F00207EBB /* UIView+Constraints.h */,
+				137A12531D6BA24F00207EBB /* UIView+Constraints.m */,
 			);
 			name = Categories;
 			sourceTree = "<group>";
@@ -180,6 +185,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				137A12541D6BA24F00207EBB /* UIView+Constraints.m in Sources */,
 				1306F5B11D6B77C900321E35 /* ViewController.m in Sources */,
 				1306F5CA1D6B7C7F00321E35 /* GlobusSegmentedControlItem.m in Sources */,
 				1306F5AE1D6B77C900321E35 /* AppDelegate.m in Sources */,
@@ -334,6 +340,7 @@
 				1306F5BF1D6B77C900321E35 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
