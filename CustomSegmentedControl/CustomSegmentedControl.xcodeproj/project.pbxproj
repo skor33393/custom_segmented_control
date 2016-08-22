@@ -14,6 +14,8 @@
 		1306F5B61D6B77C900321E35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1306F5B51D6B77C900321E35 /* Assets.xcassets */; };
 		1306F5B91D6B77C900321E35 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1306F5B71D6B77C900321E35 /* LaunchScreen.storyboard */; };
 		1306F5C31D6B791B00321E35 /* UIButton+GlobusSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 1306F5C21D6B791B00321E35 /* UIButton+GlobusSegmentedControl.m */; };
+		1306F5C71D6B7A5000321E35 /* GlobusSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 1306F5C61D6B7A5000321E35 /* GlobusSegmentedControl.m */; };
+		1306F5CA1D6B7C7F00321E35 /* GlobusSegmentedControlItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 1306F5C91D6B7C7F00321E35 /* GlobusSegmentedControlItem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,10 @@
 		1306F5BA1D6B77C900321E35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1306F5C11D6B791B00321E35 /* UIButton+GlobusSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+GlobusSegmentedControl.h"; sourceTree = "<group>"; };
 		1306F5C21D6B791B00321E35 /* UIButton+GlobusSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+GlobusSegmentedControl.m"; sourceTree = "<group>"; };
+		1306F5C51D6B7A5000321E35 /* GlobusSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobusSegmentedControl.h; sourceTree = "<group>"; };
+		1306F5C61D6B7A5000321E35 /* GlobusSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlobusSegmentedControl.m; sourceTree = "<group>"; };
+		1306F5C81D6B7C7F00321E35 /* GlobusSegmentedControlItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobusSegmentedControlItem.h; sourceTree = "<group>"; };
+		1306F5C91D6B7C7F00321E35 /* GlobusSegmentedControlItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlobusSegmentedControlItem.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +67,7 @@
 		1306F5A81D6B77C900321E35 /* CustomSegmentedControl */ = {
 			isa = PBXGroup;
 			children = (
+				1306F5C41D6B7A2E00321E35 /* GlobusSegmentedControl */,
 				1306F5C01D6B78EF00321E35 /* Categories */,
 				1306F5AC1D6B77C900321E35 /* AppDelegate.h */,
 				1306F5AD1D6B77C900321E35 /* AppDelegate.m */,
@@ -90,6 +97,17 @@
 				1306F5C21D6B791B00321E35 /* UIButton+GlobusSegmentedControl.m */,
 			);
 			name = Categories;
+			sourceTree = "<group>";
+		};
+		1306F5C41D6B7A2E00321E35 /* GlobusSegmentedControl */ = {
+			isa = PBXGroup;
+			children = (
+				1306F5C51D6B7A5000321E35 /* GlobusSegmentedControl.h */,
+				1306F5C61D6B7A5000321E35 /* GlobusSegmentedControl.m */,
+				1306F5C81D6B7C7F00321E35 /* GlobusSegmentedControlItem.h */,
+				1306F5C91D6B7C7F00321E35 /* GlobusSegmentedControlItem.m */,
+			);
+			name = GlobusSegmentedControl;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,7 +181,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				1306F5B11D6B77C900321E35 /* ViewController.m in Sources */,
+				1306F5CA1D6B7C7F00321E35 /* GlobusSegmentedControlItem.m in Sources */,
 				1306F5AE1D6B77C900321E35 /* AppDelegate.m in Sources */,
+				1306F5C71D6B7A5000321E35 /* GlobusSegmentedControl.m in Sources */,
 				1306F5C31D6B791B00321E35 /* UIButton+GlobusSegmentedControl.m in Sources */,
 				1306F5AB1D6B77C900321E35 /* main.m in Sources */,
 			);
