@@ -79,8 +79,7 @@
     if (self.itemButtons.count == 1) {
         UIButton *const btn = self.itemButtons.firstObject;
         
-        [self addVerticalConstraintsForButton:btn inView:self.containerView];
-        [self addAspectRationConstraintForButton:btn];
+        [self addNecessaryConstraintsForButton:btn inView:self.containerView];
         
         [self.containerView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[btn]|"
                                                                                    options:0
@@ -89,8 +88,7 @@
     }
     else {
         [self.itemButtons enumerateObjectsUsingBlock:^(UIButton * _Nonnull btn, NSUInteger idx, BOOL * _Nonnull stop) {
-            [self addVerticalConstraintsForButton:btn inView:self.containerView];
-            [self addAspectRationConstraintForButton:btn];
+            [self addNecessaryConstraintsForButton:btn inView:self.containerView];
             
             if (idx == 0) {
                 [self.containerView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[btn]"
@@ -134,8 +132,14 @@
     }
     
     CGFloat height = CGRectGetHeight(self.containerView.bounds);
+    
+    [CATransaction begin];
+    [CATransaction setDisableActions: YES];
+    
     _lineLayer.frame = CGRectMake(height / 2.0, 0.0, self.items.count ? CGRectGetWidth(self.containerView.bounds) - height : 0.0, self.lineHeight);
     _lineLayer.position = CGPointMake(CGRectGetMidX(self.containerView.bounds), CGRectGetMidY(self.containerView.bounds));
+    
+    [CATransaction commit];
 }
 
 #pragma mark - Public methods
@@ -220,6 +224,11 @@
     for (UILayoutGuide *gd in self.layoutGuides) {
         [self.containerView addLayoutGuide:gd];
     }
+}
+
+- (void)addNecessaryConstraintsForButton:(UIButton *)btn inView:(UIView *)view {
+    [self addVerticalConstraintsForButton:btn inView:view];
+    [self addAspectRationConstraintForButton:btn];
 }
 
 - (void)addVerticalConstraintsForButton:(UIButton *)btn inView:(UIView *)view {
